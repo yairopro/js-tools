@@ -16,7 +16,7 @@ export default class Base {
 		return instance;
 	}
 
-	equals(value) {
+	equals(value: Nullable<Base>) {
 		if (!value)
 			return false;
 		if (this === value)
