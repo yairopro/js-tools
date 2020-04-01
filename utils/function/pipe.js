@@ -1,8 +1,8 @@
-export default function pipe(functions) {
+module.exports = function pipe(path) {
 	return function pipe(...params){
-		return functions.reduce(
+		return path.reduce(
 			(value, next, index) => !index ? /* first */ next(...params) : next(value),
-			null
+			undefined
 		);
 	}
-}
+};

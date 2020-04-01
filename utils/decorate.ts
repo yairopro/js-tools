@@ -1,5 +1,5 @@
 import {ClassType, Nullable} from "../types";
-import Objects from "./Objects";
+import Objects from "./Objects/Objects";
 import {ClassWithProperties} from "../../@/aProperty";
 
 function decorate(Class: ClassType, propsDecorators: PropertiesDecorators): void;
