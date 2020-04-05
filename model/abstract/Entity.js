@@ -1,6 +1,6 @@
 const Base = require("./Base");
 
-class Entity extends Base {}
+export default class Entity extends Base {}
 Entity.addProperties({
 	id: {
 		type: Number,
@@ -9,5 +9,3 @@ Entity.addProperties({
 		storageFormat: ({INTEGER}) => INTEGER
 	},
 });
-
-module.exports = Entity;
