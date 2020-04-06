@@ -1,4 +1,4 @@
-const Base = require("./Base");
+import Base from "./Base";
 
 export default class Entity extends Base {}
 Entity.addProperties({

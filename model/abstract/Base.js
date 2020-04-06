@@ -1,6 +1,6 @@
 const Objects = require("../../utils/Objects");
 
-class Base {
+export default class Base {
 	hydrate(object) {
 		Object.assign(this, object);
 		return this;
@@ -59,5 +59,3 @@ class Base {
 }
 
 Base.properties = {};
-
-module.exports = Base;
