@@ -46,6 +46,12 @@ export default class Base {
 		properties = Objects.map(properties, (type) => {
 			if (type instanceof Function)
 				type = {type};
+
+			type = {
+				...DEFAULT_PROPERTY_CONFIG,
+				...type,
+			};
+
 			return type;
 		});
 
@@ -59,3 +65,11 @@ export default class Base {
 }
 
 Base.properties = {};
+
+const DEFAULT_PROPERTY_CONFIG = {
+	// type
+	ID: false,
+	nullable: true,
+	auto: false,
+	// storageFormat
+};
