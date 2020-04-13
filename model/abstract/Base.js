@@ -44,7 +44,7 @@ export default class Base {
 
 	static addProperties(properties){
 		properties = Objects.map(properties, (type) => {
-			if (type instanceof Function)
+			if (!type.type)
 				type = {type};
 
 			type = {
