@@ -11,7 +11,7 @@ export default class Trigger {
 		return () => this.set.delete(callback);
 	}
 
-	fire(...params) {
+	fire(params) {
 		this.set.forEach(callback => {
 			try {
 				if (callback)
