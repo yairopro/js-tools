@@ -6,7 +6,7 @@
  * @param {setter} config.set
  * 
  */
-function cacheFn({ cache, get, set, create, exist }) {
+function caching({ cache, get, set, create, exist }) {
     return function (...params) {
         let value;
 
@@ -24,8 +24,8 @@ function cacheFn({ cache, get, set, create, exist }) {
     }
 }
 
-module.exports = cacheFn;
-module.exports.default = cacheFn;
+module.exports = caching;
+module.exports.default = caching;
 
 /**
  * Check if a value has been cached
