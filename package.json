@@ -1,5 +1,11 @@
 {
 	"name": "js-tools",
 	"version": "0.0.0",
-	"dependencies": {}
+	"scripts": {
+		"test": "jest"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"jest": "^25.4.0"
+	}
 }

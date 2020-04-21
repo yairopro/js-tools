@@ -9,15 +9,14 @@
 function caching({ cache, get, set, create, exist }) {
     return function (...params) {
         let value;
-
-        const itExists = exist && exist(cache, params);
-
-        if (itExists)
+        const valueIsInCache = exist && exist(cache, params);
+        
+        if (!exist || valueIsInCache)
             value = get(cache, params);
-
-        if (!value && !itExists) {
-            value = create();
-            set(cache, value);
+        
+        if (!value && !valueIsInCache) {
+            value = create(...params);
+            set(cache, value, params);
         }
 
         return value;
