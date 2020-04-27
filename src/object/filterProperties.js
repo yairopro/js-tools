@@ -1,7 +1,12 @@
-const filter = require("../Objects/filter");
+const reduceObject = require("./reduceObject");
 
-module.exports = function mapProperties(to) {
-	return function (object){
-		return filter(object, to);
-	}
+module.exports = function filterProperties(accept) {
+	return reduceObject(
+		(result, value, key, object) => {
+			if (accept(value, key, object))
+				result[key] = value;
+			return result;
+		},
+		() => ({}),
+	);
 };

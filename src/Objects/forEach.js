@@ -1,4 +1,6 @@
+const mapProperties = require("../object/mapProperties");
+
 module.exports = function forEach(object, apply) {
-	Object.keys(object)
-		.forEach(key => apply(object[key], key));
+	mapProperties(apply)(object);
+	return object;
 };

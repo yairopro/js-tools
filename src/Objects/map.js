@@ -1,7 +1,5 @@
-const forEach = require("./forEach");
+const mapProperties = require("../object/mapProperties");
 
-module.exports = function map(object, mapProperty){
-	const result  = {};
-	forEach(object, (value, key) => result[key] = mapProperty(value, key));
-	return result;
+module.exports = function map(object, to){
+	return mapProperties(to)(object);
 };
