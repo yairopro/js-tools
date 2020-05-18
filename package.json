@@ -2,10 +2,14 @@
 	"name": "js-tools",
 	"version": "0.0.0",
 	"scripts": {
-		"test": "jest"
+		"test": "jest",
+		"debug": "ndb --inspect node_modules/.bin/jest --watch"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"curry": "^1.2.0"
+	},
 	"devDependencies": {
-		"jest": "^25.4.0"
+		"jest": "^25.4.0",
+		"ndb": "^1.1.5"
 	}
 }
