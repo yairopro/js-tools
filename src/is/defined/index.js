@@ -3,8 +3,6 @@
  * @param {*} value 
  * @returns {boolean} True if value different from null or undefined.
  */
-function isDefined(value) {
+module.exports = function isDefined(value) {
 	return value !== null && value !== undefined;
 }
-
-module.exports = isDefined;

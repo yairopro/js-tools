@@ -1,4 +1,4 @@
-const isDefined = require("./defined");
+const isDefined = require("../defined");
 
 /**
  * Tells if a value is a primitive.
@@ -9,4 +9,4 @@ module.exports = function isPrimitive(value){
 	return !isDefined(value) || PRIMITIVES.includes(typeof value);
 };
 
-const PRIMITIVES = ["boolean", "number", "string"];
+const PRIMITIVES = ["boolean", "number", "string", "symbol"];

@@ -6,10 +6,11 @@
 		"debug": "ndb --inspect node_modules/.bin/jest --watch"
 	},
 	"dependencies": {
-		"curry": "^1.2.0"
+		"curry": "^1.2.0",
+		"poly-apply": "^1.0.1"
 	},
 	"devDependencies": {
-		"jest": "^25.4.0",
+		"jest": "^26.1.0",
 		"ndb": "^1.1.5"
 	},
 	"license": "MIT"
