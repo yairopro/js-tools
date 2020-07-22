@@ -17,6 +17,4 @@ test('isPrimitive()', () => {
 	expect(isDefined(Symbol({}))).toBe(true);
 
 	expect(isDefined({})).toBe(false);
-	expect(isDefined([])).toBe(false);
-	expect(isDefined(() => 0)).toBe(false);
 });

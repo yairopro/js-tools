@@ -11,6 +11,10 @@ test('Array.prototype.first', () => {
 	expect(copy.first).toBe(1);
 	expect(copy).not.toEqual(original);
 	expect(copy.slice(1)).toEqual(original.slice(1));
+
+	const empty = [];
+	empty.first = 1;
+	expect(empty).toEqual([1]);
 });
 
 test('Array.prototype.last', () => {
@@ -24,4 +28,11 @@ test('Array.prototype.last', () => {
 	expect(copy.last).toBe('d');
 	expect(copy).not.toEqual(original);
 	expect(copy.slice(0, -1)).toEqual(original.slice(0, -1));
+
+	const empty = [];
+	expect(empty.lastIndex).toBe(0);
+	
+	empty.last = 1;
+	expect(empty).toEqual([1]);
+	expect(empty.first === empty.last).toBe(true);
 });
