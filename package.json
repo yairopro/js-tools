@@ -1,14 +1,14 @@
 {
 	"name": "js-tools",
 	"version": "0.0.4",
-	"main": "src",
 	"scripts": {
 		"test": "jest",
 		"debug": "ndb --inspect node_modules/.bin/jest --watch"
 	},
 	"dependencies": {
 		"curry": "^1.2.0",
-		"poly-apply": "^1.0.1"
+		"poly-apply": "^1.0.1",
+		"ramda": "^0.27.1"
 	},
 	"devDependencies": {
 		"jest": "^26.1.0",

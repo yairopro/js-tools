@@ -1,3 +1,5 @@
+const getLastIndexOf = require("../../Arrays/getLastIndexOf");
+
 Object.defineProperties(Array.prototype, {
 	first: {
 		configurable: true,
@@ -13,7 +15,7 @@ Object.defineProperties(Array.prototype, {
 	lastIndex: {
 		configurable: true,
 		get: function (){
-			return Math.max(this.length - 1, 0);
+			return getLastIndexOf(this);
 		},
 	},
 
