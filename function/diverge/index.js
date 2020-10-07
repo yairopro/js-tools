@@ -1,4 +1,4 @@
-module.exports = function divert(effect) {
+module.exports = function diverge(effect) {
 	return function (...input) {
 		try {
 			if (effect instanceof Function)

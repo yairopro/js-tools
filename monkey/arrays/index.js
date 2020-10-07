@@ -1,4 +1,4 @@
-const getLastIndexOf = require("../../Arrays/getLastIndexOf");
+const getLastIndexOf = require("../../Arrays/getLastIndex");
 
 Object.defineProperties(Array.prototype, {
 	first: {
