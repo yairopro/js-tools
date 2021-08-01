@@ -1,6 +1,6 @@
 {
 	"name": "js-tools",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"scripts": {
 		"test": "jest",
 		"debug": "ndb --inspect node_modules/.bin/jest --watch"
