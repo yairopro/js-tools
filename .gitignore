@@ -3,3 +3,4 @@ yarn.lock
 package-lock.json
 .idea
 .DS_Store
+pnpm-lock.yaml
