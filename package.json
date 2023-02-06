@@ -1,7 +1,9 @@
 {
 	"name": "js-tools",
-	"version": "0.0.15",
-	"main": "src",
+	"version": "0.0.16",
+	"exports": {
+		".": "./src"
+	},
 	"scripts": {
 		"test": "jest",
 		"debug": "ndb --inspect node_modules/.bin/jest --watch"
