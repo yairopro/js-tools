@@ -1,11 +1,12 @@
 {
 	"name": "js-tools",
-	"version": "0.0.16",
+	"version": "0.0.17",
 	"exports": {
-		".": "./src"
+		".": "./dist"
 	},
 	"scripts": {
 		"_test": "jest",
+		"build": "rm -rf dist && tsc",
 		"test": "mocha --check-leaks -r ts-node/register src/**/spec.ts",
 		"debug": "ndb --inspect node_modules/.bin/jest --watch"
 	},
