@@ -1,8 +1,8 @@
 {
 	"name": "js-tools",
-	"version": "0.0.17",
+	"version": "0.0.18",
 	"exports": {
-		".": "./dist"
+		".": "./dist/"
 	},
 	"scripts": {
 		"_test": "jest",
