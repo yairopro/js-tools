@@ -1,8 +1,14 @@
 {
 	"name": "js-tools",
-	"version": "0.0.18",
+	"version": "0.0.20",
 	"exports": {
-		"./": "./dist/"
+		"./**/*" : {
+			"types": "./dist/**/*.d.ts",
+			"node": "./dist/**/*.js",
+			"require": "./dist/**/*.js",
+			"es2015": "./dist/**/*.js",
+			"default": "./dist/**/*.js"
+		}
 	},
 	"scripts": {
 		"_test": "jest",
