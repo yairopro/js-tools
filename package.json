@@ -1,15 +1,6 @@
 {
 	"name": "js-tools",
-	"version": "0.0.20",
-	"exports": {
-		"./**/*" : {
-			"types": "./dist/**/*.d.ts",
-			"node": "./dist/**/*.js",
-			"require": "./dist/**/*.js",
-			"es2015": "./dist/**/*.js",
-			"default": "./dist/**/*.js"
-		}
-	},
+	"version": "0.0.19",
 	"scripts": {
 		"_test": "jest",
 		"build": "rm -rf dist && tsc",
